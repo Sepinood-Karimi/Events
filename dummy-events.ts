@@ -42,14 +42,12 @@ export function getAllEvents() {
 export function getFilteredEvents(dateFilter: { year: number; month: number }) {
   const { year, month } = dateFilter;
 
-  let filteredEvents = DUMMY_EVENTS.filter((event) => {
+  return DUMMY_EVENTS.filter((event) => {
     const eventDate = new Date(event.date);
     return (
       eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
     );
   });
-
-  return filteredEvents;
 }
 
 export function getEventById(id: string) {
