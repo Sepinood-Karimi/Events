@@ -1,5 +1,7 @@
+import EventsList from "@/components/events-list";
+
 const EventsPage = () => {
-  return <h1>events page</h1>;
+  return <EventsList />;
 };
 
 export default EventsPage;
