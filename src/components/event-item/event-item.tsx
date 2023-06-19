@@ -1,8 +1,8 @@
 import React from "react";
 import eventObj from "@/models/eventObj";
-import Link from "next/link";
 import classnames from "classnames";
 import classes from "./event-item.module.css";
+import Button from "@/components/UI/Button/button";
 
 const EventItem: React.FC<{ eventItem: eventObj }> = (props) => {
   const humanReadableDate = new Date(props.eventItem.date).toLocaleDateString(
@@ -29,7 +29,7 @@ const EventItem: React.FC<{ eventItem: eventObj }> = (props) => {
           </div>
         </div>
         <div className={classnames(classes.link)}>
-          <Link href={exploreLink}>Explore Event</Link>
+          <Button link={exploreLink} children="Explore Event" />
         </div>
       </div>
     </li>
