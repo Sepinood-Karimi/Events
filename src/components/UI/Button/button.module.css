@@ -8,3 +8,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.link:hover,
+.link:active {
+    background-color: #02afa1;
+    border-color: #02afa1;
+}
