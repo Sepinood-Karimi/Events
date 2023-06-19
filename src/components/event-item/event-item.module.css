@@ -25,13 +25,33 @@
     color: #666666;
 }
 
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
 .date{
     font-weight: bold;
-    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.date time{
+    margin-left: 5px;
 }
 
 .link{
-    margin-top: 60px;
-    margin-left: 220px;
+    margin: 40px 20px 0 200px;
+
+}
+
+.link span{
+    margin-right: 10px;
 }
 
