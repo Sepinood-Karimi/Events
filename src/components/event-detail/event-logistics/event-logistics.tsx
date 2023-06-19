@@ -20,11 +20,21 @@ const EventLogistics: React.FC<{ event: eventObj }> = (props) => {
         <img src={`/${props.event.image}`} alt={props.event.title} />
       </div>
       <ul>
-        <LogisticsItem icon={Calender}>
-          <time>{humanReadableDate}</time>
+        <LogisticsItem>
+          <span>
+            <Calender />
+          </span>
+          <span>
+            <time>{humanReadableDate}</time>
+          </span>
         </LogisticsItem>
-        <LogisticsItem icon={Location}>
-          <address>{addressText}</address>
+        <LogisticsItem>
+          <span>
+            <Location />
+          </span>
+          <span>
+            <address>{addressText}</address>
+          </span>
         </LogisticsItem>
       </ul>
     </section>
