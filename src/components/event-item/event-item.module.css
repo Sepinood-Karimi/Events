@@ -1,0 +1,32 @@
+.list-item{
+    background-color: white;
+    border: 1px solid white;
+    display: flex;
+    margin: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.list-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-right: 10px;
+}
+
+.date,.address{
+    color: #666666;
+}
+
+.date{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.link{
+    margin-top: 60px;
+    margin-left: 190px;
+}
+
